@@ -28,6 +28,6 @@ function nightDay(self){
     Body.setColor('black');
     Body.setBackgroundColor('white');
     self.value='night';
-    Links.setColor('blue');
+    Links.setColor('black');
   }
 }
