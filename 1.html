@@ -19,36 +19,7 @@
   grid-template-columns: 500px 1fr;
 }
 </style>
-<script>
-  function nightDay(self){
-    var target = document.querySelector('body');
-    if(self.value==='night'){
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      self.value='day';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length) {
-        console.log(alist[i]);
-        alist[i].style.color = 'powderblue';
-        i = i + 1;
-      }
-    } else {
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      self.value='night';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length) {
-        console.log(alist[i]);
-        alist[i].style.color = 'blue';
-        i = i + 1;
-      }
-    }
-  }
-</script>
+<script src = "colors.js"></script>
 </head>
 <body>
 <h1><a href="index.html">Home</a></h1>
