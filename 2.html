@@ -32,18 +32,22 @@
     <h2>Click the background to change the color.</h2>
     <img src = "https://p5js.org/assets/img/p5js.svg">
     <script>
-      function setup() {
-        createCanvas(400, 300);
-      }
-      function draw() {
-        fill('pink');
-        circle(random(400), 200, 50);
-        fill('powderblue');
-        circle(random(400), 100, 50);
-      }
-      function mousePressed() {
-        background(random(255), random(255), random(255));
-      }
+        function setup() {
+          createCanvas(400, 300);
+        }
+        function draw() {
+          fill('pink');
+          circle(random(400), 200, random(50));
+          fill('powderblue');
+          circle(random(400), 100, random(50));
+          translate(width / 2, height / 2);
+          rotate(PI / 3.0);
+          fill('orange');
+          rect(random(800), random(600), random(100), random(100));
+        }
+        function mousePressed() {
+          background(random(255), random(255), random(255));
+        }
     </script>
   </div>
 </div>
