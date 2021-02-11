@@ -33,32 +33,16 @@
     <img src = "https://p5js.org/assets/img/p5js.svg">
     <script>
       function setup() {
-        createCanvas(windowWidth, windowHeight);
-        x = 0;
-        y = 0;
+        createCanvas(400, 300);
       }
-      // function draw() {
-      //   fill('pink');
-      //   circle(x, y, 50);
-      //   x = x + 10;
-      //   y = y + 10;
-      // }
-      // function mousePressed() {
-      // if (value === 0) {
-      //   value = 255;
-      // } else {
-      //   value = 0;
-      // }
-      let value = 0;
       function draw() {
-        fill(value);
-        rect(25, 25, 50, 50);
+        fill('pink');
+        circle(random(400), 200, 50);
+        fill('powderblue');
+        circle(random(400), 100, 50);
       }
-      function deviceShaken() {
-        value = value + 5;
-        if (value > 255) {
-          value = 0;
-        }
+      function mousePressed() {
+        background(random(255), random(255), random(255));
       }
     </script>
   </div>
