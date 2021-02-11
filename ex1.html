@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src = "p5.min.js"></script>
+  </head>
+  <body>
+    <img src = "https://p5js.org/assets/img/p5js.svg">
+    <script>
+      // function setup() {
+      //   createCanvas(windowWidth, windowHeight);
+      //   x = 0;
+      //   y = 0;
+      // }
+      // function draw() {
+      //   fill('pink');
+      //   circle(x, y, 50);
+      //   x = x + 10;
+      //   y = y + 10;
+      // }
+      let value = 0;
+      function draw() {
+        fill(value);
+        rect(25, 25, 50, 50);
+      }
+      function deviceMoved() {
+        value = value + 5;
+        if (value > 255) {
+          value = 0;
+        }
+      }
+   </script>
+  </body>
+</html>
