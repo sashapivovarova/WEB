@@ -125,11 +125,11 @@ header {
   width: 25%;
 }
 
-.lesson-icon {
+.btn-icon {
   position: relative;
 }
 
-.lesson-icon p {
+.btn-icon p {
   position: absolute;
   top: 90px;
   width: 100%;
