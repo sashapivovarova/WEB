@@ -125,15 +125,19 @@ header {
   width: 25%;
 }
 
-.btn-icon {
+.lesson-icon {
   position: relative;
 }
 
-.btn-icon p {
+.lesson-icon p {
   position: absolute;
   top: 90px;
   width: 100%;
   color: white;
+}
+
+.lesson-icon:hover {
+  opacity: 1;
 }
 
 .txt-contents {
